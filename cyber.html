@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Security - Overview</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.jpeg">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <script src="js/script.js"></script>
+    <!-- header & footer css link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/loader.js"></script>
+
+</head>
+<body>
+    <div class="loader"></div>
+    <!-- header section starts -->
+
+    <header class="header" id="header">
+        <section class="flex">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa fa-bars" id="btn"></i>
+                <i class="fa fa-times" id="cancel"></i>
+            </label>
+            <img src="assets/images/logo no bg.png" class="logo">
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.php" class="link">Home</a></li>
+                <li><a href="courses.html" class="link active">Courses</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+                <li><a href="contact2.php" class="link">Contact</a></li>
+                <li><a href="login.php" class="link2"><i class="bx bx-log-in"></i>Login</a></li>
+                <li><a href="signup.php" class="link2"><i class="fa fa-login"></i>Sign Up</a></li>
+            </ul>
+        </div>
+        </section>
+    </header>
+
+    <!-- header section ends -->
+    <div class="course">
+        <h1> Cyber Security</h1>
+        <h2>Linux&nbsp;Networking</h2>
+          <div class="container1">
+          <img src="assets/images/cybersecurity.jpg" class="img1"/>
+      <div class="text1"><p> 
+          
+  Discover the transformative power of Linux and Networking at XACKTON. Our cutting-edge courses are carefully crafted to empower students with comprehensive knowledge and practical skills.
+  
+  At XACKTON, we believe in the power of hands-on learning. Throughout the course, you will actively engage with the material, allowing you to develop a strong foundation and practical skills that can be applied in real-world scenarios. 
+  
+  Throughout the course, you will master the art of logical reasoning, honing your ability to develop innovative applications. Dive deep into the intricacies of building computer systems, equipping yourself with the skills necessary to construct robust and efficient setups. Additionally, you will delve into the protocols that underpin system upgrades, gaining a thorough understanding of their implementation.
+  
+  Embark on a journey of discovery with XACKTON and unlock a world of possibilities. Enroll in our Linux and Networking courses today to take your skills to new heights and pave the way for a successful career in the tech industry.
+  </p>
+  </div>
+  </div><p class="cost"><i class="fa fa-inr"></i>499</p>
+  <button class="add"><a href="login.php">Add To Cart</a></button><br><br>
+
+    <!-- footer section starts -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/images/logo no bg.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Mumbai = 400 037</p>
+            <p><strong>Email Id: </strong><a href="mailto:info@xackton.com">info@xackton.com</a></p>
+            <p><strong>Phone: </strong><a href="tel:+917977837609">+91 7977837609</a></p>
+        </div>
+    
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="contact2.php">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="signup.php">Sign Up</a>
+            <a href="login.php">Login</a>
+            <!-- <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a> -->
+            <a href="#">Help</a>
+        </div>
+    
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <a href="https://www.facebook.com/xackton"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://twitter.com/XacktonOfficial"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCh1ORE8jXtSo68Oejxk2inQ"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/xackton/"><i class="fa fa-instagram"></i></a>
+                <a href="http://wa.me/+917977837609"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p>@2023 XACKTON. Design & Developed</p>
+        </div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+     
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        
+        document.getElementById("header").style.background = "#000";
+      } else {
+       
+        document.getElementById("header").style.background = "none";
+      }
+    }
+</script>
+</body>
+</html>
